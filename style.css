@@ -1,12 +1,13 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-family: monospace;
     margin: 0px;
     padding: 0px;
     background-color: rgb(254, 216, 235);
+    margin-bottom: 50px;
 }
 
 h1{
@@ -23,23 +24,7 @@ h1{
     justify-content: space-around;
     align-items: center;
 }
-.customDiv h3{
-    font-size: 20px;
-}
-#gridCustom{
-    font-size: 20px;
 
-}
-
-.typeIn{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap:20px;
-}
-p{
-    font-size: 18px;
-}
 button{
     weight:150px;
     height: 30px;
@@ -53,4 +38,12 @@ button{
 .buttonDiv{
     display: flex;
     gap: 50px;
+    padding:30px;
+}
+
+.board{
+    display: grid;
+    width:500px;
+    height: 500px;
+    border: 1px solid rgb(129, 51, 129);
 }
