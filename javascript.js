@@ -2,6 +2,8 @@
 let color="black";
 let click = false;
 
+
+//click to draw function
 document.querySelector("body").addEventListener("click",function(e){
     if(e.target.targetName != "BUTTON"){
         click = !click;
@@ -13,16 +15,13 @@ document.querySelector("body").addEventListener("click",function(e){
         }
     }
 })
-
+//creat grid
 function createBoard(size){
     const board = document.querySelector(".board");
     
     board.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
     board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
     
-
-
-
     let numDivs = size * size;
 
     for ( let i = 0; i<numDivs; i++){
@@ -46,6 +45,7 @@ function getSize(input){
     };
     }
 
+//color the grid
 function colorDiv(){
     if(click){
         if(color == "random"){
