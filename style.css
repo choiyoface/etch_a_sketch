@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(254, 216, 235);
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 50px;
+    color: rgb(251, 112, 135);
+}
+
+.customDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.customDiv h3{
+    font-size: 20px;
+}
+#gridCustom{
+    font-size: 20px;
+
+}
+
+.typeIn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+}
+p{
+    font-size: 18px;
+}
+button{
+    weight:150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(129, 51, 129);
+    color:white;
+   
+    
+}
+.buttonDiv{
+    display: flex;
+    gap: 50px;
+}
