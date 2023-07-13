@@ -1,6 +1,18 @@
 
 let color="black";
-getSize();
+let click = false;
+
+document.querySelector("body").addEventListener("click",function(e){
+    if(e.target.targetName != "BUTTON"){
+        click = !click;
+        let draw = document.querySelector("#draw");
+        if(click){
+            draw.innerHTML = "YOUR PEN IS ENABLED";
+        }else{
+            draw.innerHTML = "YOUR PEN IS DISABLED";
+        }
+    }
+})
 
 function createBoard(size){
     const board = document.querySelector(".board");
@@ -35,10 +47,12 @@ function getSize(input){
     }
 
 function colorDiv(){
-    if(color == "random"){
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-    }else{
-        this.style.backgroundColor = "black";
+    if(click){
+        if(color == "random"){
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        }else{
+            this.style.backgroundColor = "black";
+        }
     }
 
 }
