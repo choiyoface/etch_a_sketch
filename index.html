@@ -13,15 +13,15 @@
     <div class="customDiv">
         <h3>Custom your Grid Here! ⏬</h3><br/>
         <div class="typeIn">
-        <input type="text" name="setGrid" id ="setGrid">
-        <button id = "creatBtn">CREATE</button>
-        <div id="messge"></div>
+        <input type="text" placeholder="size of grid"  onchange="getSize(this.value)"  id="getSize">
+        <button id = "creatBtn" onclick="getSize()">CREATE</button>
+        <div id="message"></div>
 
     </div>
     <div class ="buttonDiv">
-        <button id = "blackBtn">BLACK</button>
-        <button id = "randomBtn">RANDOM</button>
-        <button id = "resetBtn">RESET</button>
+        <button id = "blackBtn" onclick="setColor('black')">BLACK</button>
+        <button id = "randomBtn" onclick="setColor('random')">RANDOM</button>
+        <button id = "resetBtn" onclick="resetBoard()">RESET</button>
     </div>
     
     <div class = "board"> </div>
